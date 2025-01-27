@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>ICT Helpdesk - Tambah Role</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../../../assets/img/favicon_.ico" rel="icon">
+  <link href="../../../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../../../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../../../assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="../../../assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="../../../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../../../assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../../../assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: NiceAdmin
+  * Updated: Mar 09 2023 with Bootstrap v5.2.3
+  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="../dashboard-home.html" class="logo d-flex align-items-center">
+        <img src="../../../assets/img/android-chrome-192x192.png" alt="">
+        <span class="d-none d-lg-block">ICT Helpdesk</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+        <li class="nav-item dropdown">
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-bell"></i>
+            <span class="badge bg-primary badge-number">1</span>
+          </a><!-- End Notification Icon -->
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+            <li class="dropdown-header">
+              Kamu memiliki 1 notifikasi
+              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">Liat Semua</span></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-exclamation-circle text-warning"></i>
+              <div>
+                <h4>Tiket</h4>
+                <p>Satu tiket keluhan diterima, mohon dicek</p>
+                <p>30 min. ago</p>
+              </div>
+            </li>
+          </ul><!-- End Notification Dropdown Items -->
+
+        </li><!-- End Notification Nav -->
+
+        <li class="nav-item dropdown pe-3">
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <img src="../../../assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+            <span class="d-none d-md-block dropdown-toggle ps-2">Ramdhan Hidayat</span>
+          </a><!-- End Profile Iamge Icon -->
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6>Ramdhan Hidayat</h6>
+              <span>ICT Staff</span>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-person"></i>
+                <span>Profil</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-gear"></i>
+                <span>Pengaturan Akun</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Keluar</span>
+              </a>
+            </li>
+
+          </ul><!-- End Profile Dropdown Items -->
+        </li><!-- End Profile Nav -->
+
+      </ul>
+    </nav><!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link " href="dashboard-home.html">
+          <i class="bi bi-grid"></i>
+          <span>Dashboard</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+      <!-- <li class="nav-heading">Working Order</li> -->
+
+      <!-- General Nav -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#general-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-front"></i><span>General</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="general-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="general-menu/dashboard-listticket.html">
+              <i class="bi bi-circle"></i><span>Daftar Tiket</span>
+            </a>
+          </li>
+          <li>
+            <a href="general-menu/dashboard-listwo.html">
+              <i class="bi bi-circle"></i><span>Perintah Kerja</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End General Nav -->
+
+      <!-- ict Nav -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#ict-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-slack"></i><span>I C T</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="ict-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="ict-menu/dashboard-reqsolving.html">
+              <i class="bi bi-circle"></i><span>Penanganan Masalah</span>
+            </a>
+          </li>
+          <li>
+            <a href="ict-menu/dashboard-reqasset.html">
+              <i class="bi bi-circle"></i><span>Permintaan Aset</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End ict Nav -->
+
+      <!-- Operational Nav -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-people"></i><span>Operational</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="operational-menu/dashboard-menu.html">
+              <i class="bi bi-circle"></i><span>Menu & BOM</span>
+            </a>
+          </li>
+          <li>
+            <a href="operational-menu/dashboard-promo.html">
+              <i class="bi bi-circle"></i><span>Program Promo</span>
+            </a>
+          </li>
+          <li>
+            <a href="operational-menu/dashboard-dicount.html">
+              <i class="bi bi-circle"></i><span>Discount</span>
+            </a>
+          </li>
+          <li>
+            <a href="operational-menu/dashboard-price.html">
+              <i class="bi bi-circle"></i><span>Selisi Harga</span>
+            </a>
+          </li>
+          <li>
+            <a href="operational-menu/dashboard-void.html">
+              <i class="bi bi-circle"></i><span>Void</span>
+            </a>
+          </li>
+          <li>
+            <a href="operational-menu/dashboard-store.html">
+              <i class="bi bi-circle"></i><span>List Outlet</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Operational Nav -->
+
+      <!-- F A T Nav -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+          <i class="bx bx-dollar-circle"></i><span>F A T</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="fat-menu/dashboard-coa.html">
+              <i class="bi bi-circle"></i><span>COA</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End FAT Nav -->
+
+      <!-- Purchasing Nav -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-basket2"></i><span>Purchasing</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="purchasing-menu/dashboard-product.html">
+              <i class="bi bi-circle"></i><span>Product</span>
+            </a>
+          </li>
+          <li>
+            <a href="purchasing-menu/dashboard-supplier.html">
+              <i class="bi bi-circle"></i><span>Supplier</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Purchasing Nav -->
+
+      <!-- Data master Nav -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#master-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-stack"></i><span>Master</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="master-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="master-menu/dashboard-bu.html">
+              <i class="bi bi-circle"></i><span>Bisnis Unit</span>
+            </a>
+          </li>
+          <li>
+            <a href="master-menu/dashboard-division.html">
+              <i class="bi bi-circle"></i><span>Divis</span>
+            </a>
+          </li>
+          <li>
+            <a href="master-menu/dashboard-employee.html">
+              <i class="bi bi-circle"></i><span>Karyawan</span>
+            </a>
+          </li>
+          <li>
+            <a href="master-menu/dashboard-asset.html">
+              <i class="bi bi-circle"></i><span>Aset</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Purchasing Nav -->
+
+      <!-- Data pengaturan Nav -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#pengaturan-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-gear"></i><span>Pengaturan</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="pengaturan-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="setting-menu/dashboard-ticketcategory.html">
+              <i class="bi bi-circle"></i><span>Tiket Kategori</span>
+            </a>
+          </li>
+          <li>
+            <a href="setting-menu/dashboard-assetcategory.html">
+              <i class="bi bi-circle"></i><span>Aset Kategori</span>
+            </a>
+          </li>
+          <li>
+            <a href="setting-menu/dashboard-role.html">
+              <i class="bi bi-circle"></i><span>Akun Role</span>
+            </a>
+          </li>
+          <li>
+            <a href="setting-menu/dashboard-account.html">
+              <i class="bi bi-circle"></i><span>List Akun</span>
+            </a>
+          </li>
+          <li>
+            <a href="setting-menu/dashboard-faq.html">
+              <i class="bi bi-circle"></i><span>FaQ</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Purchasing Nav -->
+
+    </ul>
+
+  </aside><!-- End Sidebar-->
+
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>Form Tambah Role</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../dashboard-home.html">Home</a></li>
+          <li class="breadcrumb-item active">Setting</li>
+          <li class="breadcrumb-item active">Role</li>
+          <li class="breadcrumb-item active">Form Tambah Role</li>
+        </ol>
+      </nav>
+    </div><!-- End Page Title -->
+  
+    <section class="section dashboard">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="card">
+            <div class="card-body">
+              <form class="mt-4">
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="name" class="form-label">Nama Role</label>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                </div>
+                <div class="table-responsive mb-3">
+                  <table class="table">
+                    <thead>
+                        <tr>
+                          <th>Menu</th>
+                          <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="table-dark">
+                        <td>General</td>
+                        <td>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input input class="form-check-input" type="checkbox" id="">
+                          <label class="form-check-label" for="articles">Daftar Tiket</label>
+                        </td>
+                        <td>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">read</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="table-dark">
+                        <td>ICT</td>
+                        <td>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input input class="form-check-input" type="checkbox" id="">
+                          <label class="form-check-label" for="articles">Penanganan Masalah</label>
+                        </td>
+                        <td>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">create</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">read</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">update</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">delete</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">approve</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input input class="form-check-input" type="checkbox" id="">
+                          <label class="form-check-label" for="articles">Pengajuan Aset</label>
+                        </td>
+                        <td>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">create</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">read</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">update</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">delete</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">approve</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="table-dark">
+                        <td>Operational</td>
+                        <td>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input input class="form-check-input" type="checkbox" id="">
+                          <label class="form-check-label" for="articles">Menu & BOM</label>
+                        </td>
+                        <td>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">create</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">read</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">update</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">delete</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">approve</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input input class="form-check-input" type="checkbox" id="">
+                          <label class="form-check-label" for="articles">Program Promoo</label>
+                        </td>
+                        <td>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">create</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">read</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">update</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">delete</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">approve</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input input class="form-check-input" type="checkbox" id="">
+                          <label class="form-check-label" for="articles">Diskon</label>
+                        </td>
+                        <td>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">create</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">read</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">update</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">delete</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">approve</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input input class="form-check-input" type="checkbox" id="">
+                          <label class="form-check-label" for="articles">Selisi Harga</label>
+                        </td>
+                        <td>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">create</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">read</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">update</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">delete</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">approve</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input input class="form-check-input" type="checkbox" id="">
+                          <label class="form-check-label" for="articles">Void</label>
+                        </td>
+                        <td>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">create</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">read</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">update</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">delete</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">approve</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input input class="form-check-input" type="checkbox" id="">
+                          <label class="form-check-label" for="articles">List Outlet</label>
+                        </td>
+                        <td>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">create</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">read</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">update</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">delete</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">approve</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="table-dark">
+                        <td>FAT</td>
+                        <td>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input input class="form-check-input" type="checkbox" id="">
+                          <label class="form-check-label" for="articles">COA</label>
+                        </td>
+                        <td>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">create</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">read</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">update</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">delete</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">approve</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="table-dark">
+                        <td>Purchasing</td>
+                        <td>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input input class="form-check-input" type="checkbox" id="">
+                          <label class="form-check-label" for="articles">Product</label>
+                        </td>
+                        <td>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">create</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">read</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">update</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">delete</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">approve</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input input class="form-check-input" type="checkbox" id="">
+                          <label class="form-check-label" for="articles">Supplier</label>
+                        </td>
+                        <td>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">create</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">read</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">update</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">delete</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">approve</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="table-dark">
+                        <td>Master</td>
+                        <td>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input input class="form-check-input" type="checkbox" id="">
+                          <label class="form-check-label" for="articles">Bisnis Unit</label>
+                        </td>
+                        <td>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">create</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">read</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">update</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">delete</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input input class="form-check-input" type="checkbox" id="">
+                          <label class="form-check-label" for="articles">Divis</label>
+                        </td>
+                        <td>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">create</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">read</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">update</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">delete</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input input class="form-check-input" type="checkbox" id="">
+                          <label class="form-check-label" for="articles">Karyawan</label>
+                        </td>
+                        <td>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">create</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">read</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">update</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">delete</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input input class="form-check-input" type="checkbox" id="">
+                          <label class="form-check-label" for="articles">Mode Penjualan</label>
+                        </td>
+                        <td>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">create</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">read</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">update</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">delete</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input input class="form-check-input" type="checkbox" id="">
+                          <label class="form-check-label" for="articles">Sistem Backoffice</label>
+                        </td>
+                        <td>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">create</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">read</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">update</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">delete</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input input class="form-check-input" type="checkbox" id="">
+                          <label class="form-check-label" for="articles">Aset</label>
+                        </td>
+                        <td>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">create</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">read</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">update</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">delete</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="table-dark">
+                        <td>Pengaturan</td>
+                        <td>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input input class="form-check-input" type="checkbox" id="">
+                          <label class="form-check-label" for="articles">Tiket Kategori</label>
+                        </td>
+                        <td>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">create</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">read</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">update</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">delete</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input input class="form-check-input" type="checkbox" id="">
+                          <label class="form-check-label" for="articles">Aset Kategori</label>
+                        </td>
+                        <td>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">create</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">read</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">update</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">delete</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input input class="form-check-input" type="checkbox" id="">
+                          <label class="form-check-label" for="articles">Akun Role</label>
+                        </td>
+                        <td>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">create</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">read</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">update</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">delete</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input input class="form-check-input" type="checkbox" id="">
+                          <label class="form-check-label" for="articles">List Akun</label>
+                        </td>
+                        <td>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">create</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">read</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">update</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">delete</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input input class="form-check-input" type="checkbox" id="">
+                          <label class="form-check-label" for="articles">FAQ</label>
+                        </td>
+                        <td>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">create</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">read</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">update</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">delete</label>
+                          </div>
+                        </td>
+                      </tr>
+
+
+
+                      <tr>
+                        <td>Master Data</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input class="form-check-input" type="checkbox" id="articles">
+                          <label class="form-check-label" for="articles">Articles</label>
+                        </td>
+                        <td>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="createArticles">
+                            <label class="form-check-label" for="createArticles">create</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="readArticles">
+                            <label class="form-check-label" for="readArticles">read</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="updateArticles">
+                            <label class="form-check-label" for="updateArticles">update</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block me-2">
+                            <input class="form-check-input" type="checkbox" id="deleteArticles">
+                            <label class="form-check-label" for="deleteArticles">delete</label>
+                          </div>
+                          <div class="form-check form-switch d-inline-block">
+                            <input class="form-check-input" type="checkbox" id="approveArticles">
+                            <label class="form-check-label" for="approveArticles">approve</label>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                </table>
+                </div>
+                <div class="col-12">
+                  <button class="btn more-btn" type="submit">Tambah</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>NiceAdmin</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../../../assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="../../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../../assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="../../../assets/vendor/echarts/echarts.min.js"></script>
+  <script src="../../../assets/vendor/quill/quill.min.js"></script>
+  <script src="../../../assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="../../../assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="../../../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../../../assets/vendor/jquery/jquery-3.6.0.min.js"></script>
+  <script src="../../../assets/js/addtable.js"></script>
+  
+  <!-- Template Main JS File -->
+  <script src="../../../assets/js/main-dashb.js"></script>
+
+</body>
+
+</html>

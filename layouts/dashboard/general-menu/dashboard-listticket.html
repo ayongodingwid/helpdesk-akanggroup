@@ -153,11 +153,6 @@
               <i class="bi bi-circle"></i><span>Daftar Tiket</span>
             </a>
           </li>
-          <li>
-            <a href="general-menu/dashboard-listwo.html">
-              <i class="bi bi-circle"></i><span>Perintah Kerja</span>
-            </a>
-          </li>
         </ul>
       </li><!-- End General Nav -->
 
@@ -358,9 +353,22 @@
                       <td>Penanganan Masalah</td>
                       <td>Dzaky Haidar</td>
                       <td>Creative Marketing</td>
-                      <td><span class="badge bg-info text-dark">Terkirim</span></td>
+                      <td><span class="badge bg-warning text-dark">Verifikasi</span></td>
                       <td>
-                        <button type="button" class="btn btn-primary btn-sm me-2" data-bs-toggle="modal" data-bs-target="#modalDiterima">
+                        <button type="button" class="btn btn-primary btn-sm me-2" data-bs-toggle="modal" data-bs-target="#modalVerifikasi">
+                          <i class="bi bi-info-circle"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>12/12/2024</td>
+                      <td>RICTKJ1212240001</td>
+                      <td>Penanganan Masalah</td>
+                      <td>Dzaky Haidar</td>
+                      <td>Creative Marketing</td>
+                      <td><span class="badge bg-info-light text-dark">Penugasan</span></td>
+                      <td>
+                        <button type="button" class="btn btn-primary btn-sm me-2" data-bs-toggle="modal" data-bs-target="#modalPenugasan">
                           <i class="bi bi-info-circle"></i>
                         </button>
                       </td>
@@ -371,7 +379,7 @@
                       <td>Penanganan Masalah</td>
                       <td>Yanto</td>
                       <td>HCGA</td>
-                      <td><span class="badge bg-primary">OnProgress</span></td>
+                      <td><span class="badge bg-primary">Pengerjaan</span></td>
                       <td>
                         <button type="button" class="btn btn-primary btn-sm me-2" data-bs-toggle="modal" data-bs-target="#modalPengerjaan">
                           <i class="bi bi-info-circle"></i>
@@ -391,12 +399,25 @@
                         </button>
                       </td>
                     </tr>
+                    <tr>
+                      <td>12/12/2024</td>
+                      <td>RFAT1221224003</td>
+                      <td>Penanganan Masalah</td>
+                      <td>Dede Iskandar</td>
+                      <td>Finance</td>
+                      <td><span class="badge text-bg-danger">Ditolak</span></td>
+                      <td>
+                        <button type="button" class="btn btn-primary btn-sm me-2" data-bs-toggle="modal" data-bs-target="#modalPenolakan">
+                          <i class="bi bi-info-circle"></i>
+                        </button>
+                      </td>
+                    </tr>
                   </tbody>
                 </table>
                 <!-- End Table with stripped rows -->
                 
                 <!-- Modal -->
-                <div class="modal fade" id="modalDiterima" tabindex="-1">
+                <div class="modal fade" id="modalVerifikasi" tabindex="-1">
                   <div class="modal-dialog modal-dialog-scrollable modal-lg">
                     <div class="modal-content">
                       <div class="modal-header">
@@ -409,12 +430,12 @@
                             <p>Kategori : Komputer & Jaringan</p>
                             <p>Divisi : Creative Marketing</p>
                             <p>Pengguna : Dzaky Haidar</p>
-                            <p>No. WA : 08457157631</p>
+                            <p>Whatsapp : 08457157631</p>
                           </div>
                           <div class="col-sm-5">
-                            <p>Status : <span class="badge bg-primary text-dark">Diterima</span></p>
-                            <p>Distujui : - </p>
-                            <p>Teknisi : - </p>
+                            <p>Status : <span class="badge bg-warning text-dark">Verifikasi</span></p>
+                            <p>Verifikasi : - </p>
+                            <p>Staff Support : - </p>
                           </div>
                         </div>
                       </div>
@@ -434,7 +455,50 @@
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="btn btn-warning">Disetujui</button>
-                        <button type="button" class="btn btn-danger">Tolak</button>
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-penolakan">Tolak</button>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Modal Dialog Scrollable-->
+
+                <div class="modal fade" id="modalPenugasan" tabindex="-1">
+                  <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title">Tiket: RICTKJ121224002</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="col-sm-5">
+                            <p>Kategori : Komputer & Jaringan</p>
+                            <p>Divisi : HCGA</p>
+                            <p>Pengguna : Yanto</p>
+                            <p>Whatsapp : 08457157631</p>
+                          </div>
+                          <div class="col-sm-5">
+                            <p>Status : <span class="badge bg-info-light text-dark">Penugasan</span></p>
+                            <p>Verifikasi : Dimas Ardhi B</p>
+                            <p>Staff Support : - </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-body">
+                        <div class="py-1">
+                          <p class="h6"><strong>Permintaan Perbaikan</strong></p>
+                          <p>tidak bisa melakukan cetak dokumen</p>
+                        </div>
+                        <div class="py-1">
+                          <p class="h6"><strong>Detail</strong></p>
+                          <p>pagi ini printer tidak bisa digunakan padahal kemarin bisa</p>
+                        </div>
+                        <div class="py-1">
+                          <p class="h6"><strong>Laporan Perbaikan</strong></p>
+                          <textarea class="form-control" style="height: 100px" disabled></textarea>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Kerjakan</button>
                       </div>
                     </div>
                   </div>
@@ -453,12 +517,12 @@
                             <p>Kategori : Komputer & Jaringan</p>
                             <p>Divisi : HCGA</p>
                             <p>Pengguna : Yanto</p>
-                            <p>No. WA : 08457157631</p>
+                            <p>Whatsapp : 08457157631</p>
                           </div>
                           <div class="col-sm-5">
-                            <p>Status : <span class="badge bg-warning text-dark">Pengerjaan</span></p>
-                            <p>Distujui : Dimas Ardhi B</p>
-                            <p>Teknisi : Ramdhan Hidayat </p>
+                            <p>Status : <span class="badge bg-primary">Pengerjaan</span></p>
+                            <p>Verifikasi : Dimas Ardhi B</p>
+                            <p>Staff Support : Ramdhan Hidayat </p>
                           </div>
                         </div>
                       </div>
@@ -473,12 +537,11 @@
                         </div>
                         <div class="py-1">
                           <p class="h6"><strong>Laporan Perbaikan</strong></p>
-                          <p>-</p>
+                          <textarea class="form-control" style="height: 100px"></textarea>
                         </div>
                       </div>
                       <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" disabled>Disetujui</button>
-                        <button type="button" class="btn btn-danger">Tolak</button>
+                        <button type="button" class="btn btn-success">Selesai</button>
                       </div>
                     </div>
                   </div>
@@ -497,12 +560,12 @@
                             <p>Kategori : COA</p>
                             <p>Divisi : Finance</p>
                             <p>Pengguna : Dede Iskandar</p>
-                            <p>No. WA : 08457157631</p>
+                            <p>Whatsapp : 08457157631</p>
                           </div>
                           <div class="col-sm-5">
                             <p>Status : <span class="badge bg-success">Selesai</span></p>
-                            <p>Distujui : Dimas Ardhi B </p>
-                            <p>Teknisi : Ramdhan Hidayat </p>
+                            <p>Verifikasi : Dimas Ardhi B </p>
+                            <p>Staff Support : Ramdhan Hidayat </p>
                           </div>
                         </div>
                       </div>
@@ -520,9 +583,68 @@
                           <p>coa sudah ditambahkan setelah kordinasi lanjut dengan pak dede, untuk penamaanya sendiri pada coa akun kepala 4 bernama "beban lainnya"</p>
                         </div>
                       </div>
+                    </div>
+                  </div>
+                </div><!-- End Modal Dialog Scrollable-->
+
+                <div class="modal fade" id="modal-penolakan" tabindex="-1">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title">Alasan penolakan</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <input type="text" class="form-control">
+                      </div>
                       <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" disabled>Disetujui</button>
-                        <button type="button" class="btn btn-secondary" disabled>Tolak</button>
+                        <button type="button" class="btn btn-primary">Kirim</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Modal -->
+
+                <div class="modal fade" id="modalPenolakan" tabindex="-1">
+                  <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title">Tiket: RFAT1221224003</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="col-sm-5">
+                            <p>Kategori : COA</p>
+                            <p>Divisi : Finance</p>
+                            <p>Pengguna : Dede Iskandar</p>
+                            <p>Whatsapp : 08457157631</p>
+                          </div>
+                          <div class="col-sm-5">
+                            <p>Status : <span class="badge bg-danger">Ditolak</span></p>
+                            <p>Verifikasi : Dimas Ardhi B </p>
+                            <p>Staff Support : - </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-body">
+                        <div class="py-1">
+                          <p class="h6"><strong>Permintaan Perbaikan</strong></p>
+                          <p>penambahan COA pada sistem esb baso aci akang</p>
+                        </div>
+                        <div class="py-1">
+                          <p class="h6"><strong>Detail</strong></p>
+                          <p>perlu menambahkan satu coa pada akun kepala 4 sesuai kebutuhan laporan keuangan</p>
+                        </div>
+                        <div class="py-1">
+                          <p class="h6"><strong>Laporan Perbaikan</strong></p>
+                          <p>-</p>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <div class="py-1">
+                          <p class="h6">Alasan Pembatalan : <strong>Tidak dilengkapi IM</strong></p>
+                        </div>
                       </div>
                     </div>
                   </div>

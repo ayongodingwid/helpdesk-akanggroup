@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>ICT Helpdesk - Menu & BoM</title>
+  <title>ICT Helpdesk - Prodcut</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -151,6 +151,11 @@
           <li>
             <a href="general-menu/dashboard-listticket.html">
               <i class="bi bi-circle"></i><span>Daftar Tiket</span>
+            </a>
+          </li>
+          <li>
+            <a href="general-menu/dashboard-listwo.html">
+              <i class="bi bi-circle"></i><span>Perintah Kerja</span>
             </a>
           </li>
         </ul>
@@ -321,8 +326,8 @@
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="../dashboard-home.html">Home</a></li>
-          <li class="breadcrumb-item active">Operational</li>
-          <li class="breadcrumb-item active">Menu & BoM</li>
+          <li class="breadcrumb-item active">Purchasing</li>
+          <li class="breadcrumb-item active">Product</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->
@@ -332,7 +337,7 @@
           <div class="col-lg-12">
             <div class="card-body">
               <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                <a class="btn btn-primary me-md-2" type="button" href="form-reqmenu.html">Buat Permintaan</a>
+                <a class="btn btn-primary me-md-2" type="button" href="form-product.html">Buat Permintaan</a>
               </div>
             </div>
             <div class="card">
@@ -358,9 +363,23 @@
                       <td>Mila Karisma</td>
                       <td>Creative Marketing</td>
                       <td>Payakumbuah</td>
-                      <td><span class="badge bg-info text-dark">Terkirim</span></td>
+                      <td><span class="badge bg-warning text-dark">Verifikasi</span></td>
                       <td>
-                        <button type="button" class="btn btn-primary btn-sm me-2" data-bs-toggle="modal" data-bs-target="#modalTerkirim">
+                        <button type="button" class="btn btn-primary btn-sm me-2" data-bs-toggle="modal" data-bs-target="#modalVerifikasi">
+                          <i class="bi bi-info-circle"></i>
+                        </button>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>12/12/2024</td>
+                      <td>RMBM121224004</td>
+                      <td>Mila Karisma</td>
+                      <td>Creative Marketing</td>
+                      <td>Payakumbuah</td>
+                      <td><span class="badge bg-info-light text-dark">Penugasan</span></td>
+                      <td>
+                        <button type="button" class="btn btn-primary btn-sm me-2" data-bs-toggle="modal" data-bs-target="#modalPenugasan">
                           <i class="bi bi-info-circle"></i>
                         </button>
                         </button>
@@ -372,7 +391,7 @@
                       <td>Amanda Manopo</td>
                       <td>Operational</td>
                       <td>Payakumbuah</td>
-                      <td><span class="badge text-bg-primary">OnProgress</span></td>
+                      <td><span class="badge text-bg-primary">Pengerjaan</span></td>
                       <td>
                         <button type="button" class="btn btn-primary btn-sm me-2" data-bs-toggle="modal" data-bs-target="#modalProses">
                           <i class="bi bi-info-circle"></i>
@@ -410,7 +429,7 @@
                 <!-- End Table with stripped rows -->
                 
                 <!-- Modal -->
-                <div class="modal fade" id="modalTerkirim" tabindex="-1">
+                <div class="modal fade" id="modalVerifikasi" tabindex="-1">
                   <div class="modal-dialog modal-dialog-scrollable modal-lg">
                     <div class="modal-content">
                       <div class="modal-header">
@@ -426,8 +445,10 @@
                             <p>Whatsapp : 08457157631</p>
                           </div>
                           <div class="col-sm-5">
-                            <p>Status : <span class="badge bg-info text-dark">Terkirim</span></p>
+                            <p>Status : <span class="badge bg-warning text-dark">Verifikasi</span></p>
                             <p>Bisnis Unit : Payakumbuah </p>
+                            <p>Verifikasi : - </p>
+                            <p>Staff Support : - </p>
                           </div>
                         </div>
                       </div>
@@ -446,30 +467,32 @@
                         </div>
                       </div>
                       <div class="modal-footer">
-                        <button type="button" class="btn btn-primary">Proses</button>
-                        <button type="button" class="btn btn-danger">Tolak</button>
+                        <button type="button" class="btn btn-warning">Verifikasi</button>
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-penolakan">Tolak</button>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="modal fade" id="modalProses" tabindex="-1">
+                <div class="modal fade" id="modalPenugasan" tabindex="-1">
                   <div class="modal-dialog modal-dialog-scrollable modal-lg">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h5 class="modal-title">Tiket: RMBM121224005</h5>
+                        <h5 class="modal-title">Tiket: RMBM121224004</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
                       <div class="modal-body">
                         <div class="row">
                           <div class="col-sm-5">
-                            <p>Kategori : Pengjauan Permintaan Aset</p>
-                            <p>Divisi : HCGA</p>
-                            <p>Pengguna : Ratna Fajri</p>
+                            <p>Kategori : Menu & BoM</p>
+                            <p>Divisi : Creative Marketing</p>
+                            <p>Pengguna : Mila Karisma</p>
                             <p>Whatsapp : 08457157631</p>
                           </div>
                           <div class="col-sm-5">
-                            <p>Status : <span class="badge bg-primary">OnProgress</span></p>
-                            <p>Bisnis Unit : Rasa Muda Makmur</p>
+                            <p>Status : <span class="badge bg-info-light text-dark">Penugasan</span></p>
+                            <p>Bisnis Unit : Payakumbuah </p>
+                            <p>Verifikasi : Dimas A Bangun </p>
+                            <p>Staff Support : - </p>
                           </div>
                         </div>
                       </div>
@@ -487,6 +510,52 @@
                           <a type="button" class="btn btn-warning" href="../../dashboard/form/reqasset.html"><i class="bi bi-file-earmark-pdf me-1"></i>Lihat</a>
                         </div>
                       </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-info">Kerjakan</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal fade" id="modalProses" tabindex="-1">
+                  <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title">Tiket: RMBM121224005</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="col-sm-5">
+                            <p>Kategori : Menu & BoM</p>
+                            <p>Divisi : Creative Marketing</p>
+                            <p>Pengguna : Mila Karisma</p>
+                            <p>Whatsapp : 08457157631</p>
+                          </div>
+                          <div class="col-sm-5">
+                            <p>Status : <span class="badge bg-primary">Pengerjaan</span></p>
+                            <p>Bisnis Unit : Payakumbuah </p>
+                            <p>Verifikasi : Dimas A Bangun </p>
+                            <p>Staff Support : Ramdhan Hidayat </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-body">
+                        <div class="py-1">
+                          <p class="h6"><strong>Subjek</strong></p>
+                          <p>Penambahan Menu & BoM</p>
+                        </div>
+                        <div class="py-1">
+                          <p class="h6"><strong>Detail</strong></p>
+                          <p>Sehubungan dengan adanya menu baru yang ada hadir di awal tahun pada bulan febuari 2025 berikut saya kirimkan detail informasi sepeutar menu tersebut untuk di tambahkan kedalam sistem ESB setiap outlet</p>
+                        </div>
+                        <div class="py-1">
+                          <p class="h6"><strong>File Pendukung</strong></p>
+                          <a type="button" class="btn btn-warning" href="../../dashboard/form/reqasset.html"><i class="bi bi-file-earmark-pdf me-1"></i>Lihat</a>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-success">Selesai</button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -501,14 +570,16 @@
                       <div class="modal-body">
                         <div class="row">
                           <div class="col-sm-5">
-                            <p>Kategori : Pengjauan Permintaan Aset</p>
-                            <p>Divisi : FAT</p>
-                            <p>Pengguna : Shopia Lachuba</p>
+                            <p>Kategori : Menu & BoM</p>
+                            <p>Divisi : Creative Marketing</p>
+                            <p>Pengguna : Mila Karisma</p>
                             <p>Whatsapp : 08457157631</p>
                           </div>
                           <div class="col-sm-5">
-                            <p>Status : <span class="badge bg-success text-dark">Selesai</span></p>
-                            <p>Bisnis Unit : Akasa</p>
+                            <p>Status : <span class="badge bg-success">Selesai</span></p>
+                            <p>Bisnis Unit : Payakumbuah </p>
+                            <p>Verifikasi : Dimas A Bangun </p>
+                            <p>Staff Support : Ramdhan Hidayat </p>
                           </div>
                         </div>
                       </div>
@@ -540,14 +611,16 @@
                       <div class="modal-body">
                         <div class="row">
                           <div class="col-sm-5">
-                            <p>Kategori : Pengjauan Permintaan Aset</p>
-                            <p>Divisi : Operational</p>
-                            <p>Pengguna : Aldi Wirayuda</p>
+                            <p>Kategori : Menu & BoM</p>
+                            <p>Divisi : Creative Marketing</p>
+                            <p>Pengguna : Mila Karisma</p>
                             <p>Whatsapp : 08457157631</p>
                           </div>
                           <div class="col-sm-5">
-                            <p>Status : <span class="badge bg-danger text-dark">Dibatalkan</span></p>
-                            <p>Bisnis Unit : Rasa Muda Makmur</p>
+                            <p>Status : <span class="badge bg-danger">Ditolak</span></p>
+                            <p>Bisnis Unit : Payakumbuah </p>
+                            <p>Verifikasi : Dimas A Bangun </p>
+                            <p>Staff Support : - </p>
                           </div>
                         </div>
                       </div>
@@ -569,6 +642,22 @@
                         <div class="py-1">
                           <p class="h6">Alasan Pembatalan : <strong>Tidak dilengkapi IM</strong></p>
                         </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal fade" id="modal-penolakan" tabindex="-1">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title">Alasan penolakan</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <input type="text" class="form-control">
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Kirim</button>
                       </div>
                     </div>
                   </div>
