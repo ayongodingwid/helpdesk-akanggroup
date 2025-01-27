@@ -6,7 +6,7 @@ Ini adalah template UI untuk kebutuhan tugas akhir saya membuat sistem informasi
 
 ## Versi 1.1
 
-**Perubahan yang terjadi**
+###**Perubahan yang terjadi**
 - Penghapusan Halaman: Perintah Kerja
 - Penambahan Halaman: Mode penjualan, Sistem Backoffice
 
