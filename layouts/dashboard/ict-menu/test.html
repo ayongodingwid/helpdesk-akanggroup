@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Table Rows</title>
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+  <link href="../../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <h3>Menu Category Detail</h3>
+    <table class="table table-bordered" id="menu-category-table">
+      <thead>
+        <tr>
+          <th>Menu Category Detail Name</th>
+          <th>Menu Category Detail on ESO</th>
+          <th>Menu Category Detail Code</th>
+          <th>Description</th>
+          <th>Max Order Qty</th>
+          <th>Theme Category Detail</th>
+          <th>Image</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="text" class="form-control" placeholder="Enter Name"></td>
+          <td><input type="text" class="form-control" placeholder="Enter Detail on ESO"></td>
+          <td><input type="text" class="form-control" placeholder="Enter Code"></td>
+          <td><input type="text" class="form-control" placeholder="Enter Description"></td>
+          <td><input type="number" class="form-control" value="0"></td>
+          <td>
+            <input type="color" class="form-control form-control-color">
+          </td>
+          <td>
+            <input type="file" class="form-control">
+          </td>
+          <td>
+            <button class="btn btn-danger btn-sm remove-row">Remove</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <button class="btn btn-primary" id="add-menu-category">Add Menu Category</button>
+  </div>
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../../assets/js/addtable.js"></script>
+</body>
+</html>
