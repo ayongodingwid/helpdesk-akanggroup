@@ -4,7 +4,11 @@ Ini adalah template UI untuk kebutuhan tugas akhir saya membuat sistem informasi
 
 [Versi asli template boostrap](https://bootstrapmade.com/)
 
-## Versi 1.0
+## Versi 1.1
+
+**Perubahan yang terjadi**
+- Penghapusan Halaman: Perintah Kerja
+- Penambahan Halaman: Mode penjualan, Sistem Backoffice
 
 ### Apa Saja Halaman Yang Tersedia
 - **Landingpage**
@@ -16,7 +20,6 @@ Ini adalah template UI untuk kebutuhan tugas akhir saya membuat sistem informasi
   - Halaman Dashboard (untuk melihat tiket yang dibuat dan yang sudah di selesaikan dengan menampilkan tiket terbaru)
   - Halaman Generanl (bisa di akses untuk semua user role)
     - Daftar Tiket
-    - Perintah kerja
   - Halaman ICT
     - Penanganan masalah
     - Permintaan Aset
@@ -36,9 +39,12 @@ Ini adalah template UI untuk kebutuhan tugas akhir saya membuat sistem informasi
     - Bisnis Unit
     - Divisi
     - Karyawan
+    - Mode Penjualan (NEW)
+    - Sistem BackOffice (NEW)
     - Aset
   - Halaman Pengatura
     - Tiket Kategori
+    - Aset Kategori
     - Akun Role
     - List Akun
     - FaQ
